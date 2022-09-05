@@ -153,7 +153,7 @@ header::after {
   height: 100px;
   width: 200px;
   margin-left: 2rem;
-  background-image: url(./assets/img/Voskhod-Logo-neg.png);
+  background-image: url(./assets/img/logo_rus_white.svg);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -360,7 +360,7 @@ i:hover {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
   width: 100%;
   max-width: 1440px;
 }
