@@ -12,7 +12,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap" rel="stylesheet">
-  <script src="index.js"></script>
 </head>
 <body>
   <header>
@@ -27,8 +26,12 @@
           <nav class="navbar">
             <ul class="nav-menu">
               <li class="nav-item"><a href="#home"><i class="nav-link fi-home"></i></a></li>
-              <li class="nav-item"><a href="#about-us" class="nav-link">О нас</a></li>
-              <li class="nav-item"><a href="#practices" class="nav-link">Практики</a></li>
+              <li class="nav-item"><a href="#about-us" class="nav-link" data-i18="about">О нас</a></li>
+              <li class="nav-item"><a href="#practices" class="nav-link" data-i18="practices">Практики</a></li>
+              <li class="language-choice nav-item">
+                <span class="lang active">Eng</span>&nbsp;/&nbsp;
+                <span class="lang">Rus</span>
+              </li>
             </ul>
           </nav>
         </div>
@@ -46,46 +49,45 @@
   <main class="main">
     <span class="anchor" id="home"></span>
     <section class="hero-section">
-      <h1 class="hero-text uppercase-text space-block">Юридическая фирма "КОТ & КОТ"</h1>
-      <!-- <p class="plain-text announcement-text">Скоро здесь будет наш новый сайт</p> -->
-      <h2 class="space-block">Мы остались, чтобы помочь остаться и вам</h2>
-      <button class="action-button"><a href="mailto:mariawebatelier@gmail.com">Напишите нам</a></button>
+      <h1 class="hero-text uppercase-text space-block" data-i18="hero-title">Юридическая фирма "КОТ & КОТ"</h1>
+      <h2 class="space-block" data-i18="hero-text">Мы остались, чтобы помочь остаться и вам</h2>
+      <button class="action-button"><a href="mailto:mariawebatelier@gmail.com" data-i18="contact-us">Напишите нам</a></button>
     </section>
 
 
     <section class="section team-section">
       <span class="anchor" id="about-us"></span>
-      <h2 class="title">Наша команда</h2>
-      <p class="regular-text"><span class="bold-text">Юридическая фирма "КОТ & КОТ"</span> включает трех партнеров, а также объединенную ими первоклассную команду юристов из ведущих глобальных юридических фирм "Китти энд Рокси" и "Демуркиз энд Блэки".</p>
+      <h2 class="title" data-i18="our-team">Наша команда</h2>
+      <p class="regular-text"><span class="bold-text" data-i18="hero-title">Юридическая фирма "КОТ & КОТ"</span> <span data-i18="our-team-description">включает трех партнеров, а также объединенную ими первоклассную команду юристов из ведущих глобальных юридических фирм "Китти энд Рокси" и "Демуркиз энд Блэки".</span></p>
       <div class="team-cards">
         <div class="team-card">
           <img class="team-photo" src="./assets/img/cat2.jpeg" alt="Главный кот">
-          <h3 class="small-title">Щен Борзый</h3>
+          <h3 class="small-title" data-i18="cat1-name">Щен Борзый</h3>
           <ul class="lawyer-contacts">
             <li class="contact-links"><a href="tel:+4915204827171"><i class="fi-telephone"></i></a></li>
             <li class="contact-links"><a href="mailto:mariawebatelier@gmail.com"><i class="fi-mail"></i></a></li>
           </ul>
-          <p>Ранее работал партнером корпоративной практики Китти энд Рокси. Щен имеет большой опыт консультирования компаний в секторе рыбы и рыбных ресурсов, а также твердых кормов. На счету Щена крупнейшие на российском рынке сделки по слияниям и поглощениям. 
+          <p data-i18="cat1-description">Ранее работал партнером корпоративной практики Китти энд Рокси. Щен имеет большой опыт консультирования компаний в секторе рыбы и рыбных ресурсов, а также твердых кормов. На счету Щена крупнейшие на российском рынке сделки по слияниям и поглощениям. 
             Щен признан одним из ведущих корпоративных юристов по версии Legal 500, Chambers Global, Chambers Europe и Best Lawyers.</p>
         </div>
         <div class="team-card">
           <img class="team-photo" src="./assets/img/cat1.jpeg" alt="Средний кот">
-          <h3 class="small-title">Прайд Дебуа</h3>
+          <h3 class="small-title" data-i18="cat2-name">Прайд Дебуа</h3>
           <ul class="lawyer-contacts">
             <li class="contact-links"><a href="tel:+4915204827171"><i class="fi-telephone"></i></a></li>
             <li class="contact-links"><a href="mailto:mariawebatelier@gmail.com"><i class="fi-mail"></i></a></li>
           </ul>
-          <p>Возглавлял практику разрешения споров московского офиса Демуркиз энд Блэки. Прайд специализируется на международных арбитражных разбирательствах, а также судебных разбирательствах в российских и иностранных судах. 
+          <p data-i18="cat2-description">Возглавлял практику разрешения споров московского офиса Демуркиз энд Блэки. Прайд специализируется на международных арбитражных разбирательствах, а также судебных разбирательствах в российских и иностранных судах. 
             Прайд имеет степень кандидата юридических наук, более 5 лет преподавал на кафедре уголовного права юридического факультета КГУ им. Мурки. Он рекомендован в качестве ведущего юриста в области арбитража и медиации, международного арбитража и судебных разбирательств в России по версии Who's Who.</p>
         </div>
         <div class="team-card">
           <img class="team-photo" src="./assets/img/cat3.jpeg" alt="Младший кот">
-          <h3 class="small-title">Рыка Блаватски</h3>
+          <h3 class="small-title" data-i18="cat3-name">Рыка Блаватски</h3>
           <ul class="lawyer-contacts">
             <li class="contact-links"><a href="tel:+4915204827171"><i class="fi-telephone"></i></a></li>
             <li class="contact-links"><a href="mailto:mariawebatelier@gmail.com"><i class="fi-mail"></i></a></li>
           </ul>
-          <p>Работала старшим юристом корпоративной практики московского офиса Демуркиз энд Блэки. Консультирует клиентов по вопросам мягких кормов и однозначности. Рыка является признанным корпоративным юристом по версии Legal 500 и Chambers 2021 (в категории «rising star»).</p>
+          <p data-i18="cat3-description">Работала старшим юристом корпоративной практики московского офиса Демуркиз энд Блэки. Консультирует клиентов по вопросам мягких кормов и однозначности. Рыка является признанным корпоративным юристом по версии Legal 500 и Chambers 2021 (в категории «rising star»).</p>
         </div>
         
       </div>
@@ -94,42 +96,39 @@
     <section class="section practices-section">
       <span class="anchor" id="practices"></span>
       <div class="practices-container">
-        <h2 class="title">Наши практики</h2>
+        <h2 class="title" data-i18="our-practices">Наши практики</h2>
         <div class="practice-card">
-          <h3 class="small-title">Сделки слияний и поглощений (M&A)</h3>
-          <p class="plain-text">
+          <h3 class="small-title" data-i18="m-a-practice">Сделки слияний и поглощений (M&A)</h3>
+          <p class="plain-text" data-i18="m-a-description1">
             Юристы нашей корпоративной практики консультируют клиентов по комплексным сделкам слияний и поглощений (M&A) и прочим корпоративным вопросам, включая:
           </p>
           <ul>
-            <li>сделки слияния и поглощения (M&A);</li>    
-            <li>создание совместных предприятий (JV);</li>
-            <li>инвестиции частного капитала;</li>
-            <li>сделки в области недвижимости и строительства;</li>
-            <li>сделки в области энергетики и природных ресурсов;</li>
+            <li data-i18="m-a-1">создание совместных предприятий (JV);</li>
+            <li data-i18="m-a-2">инвестиции частного капитала;</li>
+            <li data-i18="m-a-3">сделки в области недвижимости и строительства;</li>
+            <li data-i18="m-a-4">сделки в области энергетики и природных ресурсов;</li>
             <li>комплаенс (включая вопросы санкционного регулирования).</li>
           </ul>
-          <p class="plain-text">Мы сопровождаем все этапы сделок M&A, включая комплексное структурирование, юридическую проверку активов, согласование сделочной документации и сопровождение получения регуляторных согласий.</p>
-          <p class="plain-text">Наличие партнерских отношений с консультантами за пределами РФ позволяет консультировать, в том числе, по вопросам иностранных юрисдикций, включая вопросы санкций.</p>
+          <p class="plain-text" data-i18="m-a-description2">Мы сопровождаем все этапы сделок M&A, включая комплексное структурирование, юридическую проверку активов, согласование сделочной документации и сопровождение получения регуляторных согласий.</p>
         </div>
 
         <div class="practice-card">
-          <h3 class="small-title">Разрешение споров (Litigation & Arbitration)</h3>
-          <p class="plain-text">Юристы нашей практики разрешения споров консультируют и представляют интересы клиентов при разрешении комплексных и крупнейших споров как на досудебной (претензионной), так и на юрисдикционной (судебной или арбитражной) стадиях.</p>
-          <p class="plain-text">Мы обладаем опытом успешного разрешения коммерческих, корпоративных, строительных, инфраструктурных споров, а также споров, связанных с недвижимостью, финансированием и предоставлением обеспечительных инструментов. В частности, мы защищаем наших клиентов:</p>
+          <h3 class="small-title" data-i18="l-a-practice">Разрешение споров (Litigation & Arbitration)</h3>
+          <p class="plain-text" data-i18="l-a-description1">Юристы нашей практики разрешения споров консультируют и представляют интересы клиентов при разрешении комплексных и крупнейших споров как на досудебной (претензионной), так и на юрисдикционной (судебной или арбитражной) стадиях.</p>
+          <p class="plain-text" data-i18="l-a-description2">Мы обладаем опытом успешного разрешения коммерческих, корпоративных, строительных, инфраструктурных споров, а также споров, связанных с недвижимостью, финансированием и предоставлением обеспечительных инструментов. В частности, мы защищаем наших клиентов:</p>
           <ul>       
-            <li>в международном коммерческом арбитраже (третейских судах);</li>
-            <li>в судебных разбирательствах в российских судах;</li>
-            <li>в судебных разбирательствах в иностранных государственных судах.</li>
+            <li data-i18="l-a-1">в международном коммерческом арбитраже (третейских судах);</li>
+            <li data-i18="l-a-2">в судебных разбирательствах в российских судах;</li>
+            <li data-i18="l-a-3">в судебных разбирательствах в иностранных государственных судах.</li>
           </ul>
-          <p class="plain-text">Мы сопровождаем все этапы сделок M&A, включая комплексное структурирование, юридическую проверку активов, согласование сделочной документации и сопровождение получения регуляторных согласий.</p>
-          <p class="plain-text">Наличие партнерских отношений с консультантами за пределами РФ позволяет консультировать, в том числе, по вопросам иностранных юрисдикций, включая вопросы санкций.</p>
+          <p class="plain-text" data-i18="l-a-description3">Мы сопровождаем все этапы сделок M&A, включая комплексное структурирование, юридическую проверку активов, согласование сделочной документации и сопровождение получения регуляторных согласий.</p>
         </div>
       </div>
     </section>
   </main>
   <footer class="footer">
-    <i class="fi-social-github"></i><span class="regular-text">Разработано:&nbsp;&nbsp;</span><a href="https://github.com/mlatysheva">maria.latysheva</a>
+    <i class="fi-social-github"></i><span class="regular-text" data-i18="developed-by">Разработано:&nbsp;&nbsp;</span><a href="https://github.com/mlatysheva">maria.latysheva</a>
   </footer>
-  
+  <script type="module" src="index.js"></script>
 </body>
 </html>
