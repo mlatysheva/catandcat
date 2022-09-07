@@ -45,6 +45,10 @@ a:hover {
   cursor: pointer;
 }
 
+.lang:hover {
+  color: var(--orange-color);
+}
+
 li {
   list-style: none;
 }
