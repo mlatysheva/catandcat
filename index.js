@@ -6,6 +6,8 @@ if (localStorage.getItem('lang')) {
   lang = localStorage.getItem('lang');
 } else lang = 'en';
 
+console.log(`lang is ${lang}`);
+
 setLocalStorage();
 
 getTranslate(lang);
